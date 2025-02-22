@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到我的网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">首页</a>
+            <a href="#about">关于</a>
+            <a href="#contact">联系</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>欢迎来到我的网站！</h1>
+        <p>这是一个简单的静态网页，适用于个人网站或作品展示。</p>
+        <a href="#about" class="btn">了解更多</a>
+    </div>
+
+    <div class="container" id="about">
+        <h2>关于我</h2>
+        <p>我是 [你的名字]，热爱编程和创造有趣的项目。</p>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>联系我</h2>
+        <p>邮箱: your-email@example.com</p>
+        <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+    </div>
+
+    <footer>
+        &copy; 2025 你的名字. All Rights Reserved.
+    </footer>
+</body>
+</html>
