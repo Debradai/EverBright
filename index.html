@@ -52,15 +52,34 @@
             background: #333;
             color: white;
         }
+        nav {
+            display: flex; /* Enables horizontal layout */
+            align-items: center; /* Aligns logo and links vertically */
+            justify-content: space-between; /* Spaces out logo and navigation */
+            background: #333; /* Navbar background color */
+            padding: 10px 20px;
+        }
+        .logo img {
+            height: 50px; /* Adjust logo size */
+            margin-right: 20px; /* Space between logo and menu */
+        }
+        .nav-links {
+            display: flex; /* Makes the navigation links horizontal */
+        }
+        
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Company Logo" style="height: 50px;">
         <nav>
-            <a href="#home">首页</a>
-            <a href="#about">关于我们</a>
-            <a href="#contact">联系我们</a>
+            <a href="https://weinkris.com" class="logo">
+            <img src="logo.png" alt="Company Logo">
+            </a>
+            <div class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#about">关于我们</a>
+                <a href="#contact">联系我们</a>
+            </div>    
         </nav>
     </header>
 
