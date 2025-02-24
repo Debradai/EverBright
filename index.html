@@ -88,35 +88,111 @@
                 <a href="#about">关于我们</a>
                 <a href="#contact">联系我们</a>
             </div>    
+            <!-- Language Selector -->
+            <select id="languageSwitcher" onchange="changeLanguage(this.value)">
+                <option value="zh-CN">简体中文</option>
+                <option value="zh-TW">繁體中文</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
         </nav>
     </header>
 
-    <div class="container">
-        <h1>欢迎来到恒睿会计事务所</h1>
-        <p>诚信至上，专业高效，客户至上是我们的服务宗旨。</p>
-        <a href="#about" class="btn">了解更多</a>
+    <div class="container" id="home">
+        <h2 id="title-home">欢迎来到恒睿会计事务所</h2>
+        <p id="text-home">诚信至上，专业高效，客户至上是我们的服务宗旨。</p>
+        <a href="#about" class="btn" id="text-further">了解更多</a>
     </div>
 
     <div class="container" id="about">
-        <h2>关于我们</h2>
-        <p>恒睿会计事务所位于洛杉矶，专注财务与税务服务，涵盖税务规划、跨国公司设立及投资咨询，业务拓展至墨西哥、中国等地。公司由美国及中国的专业注册会计师组成，具备10年以上经验。我们坚持诚信，助力华人优化税务、降低风险、拓展国际业务。</p>
+        <h2 id="title-about">关于我们</h2>
+        <p id="text-about">恒睿会计事务所位于洛杉矶，专注财务与税务服务，涵盖税务规划、跨国公司设立及投资咨询，业务拓展至墨西哥、中国等地。公司由美国及中国的专业注册会计师组成，具备10年以上经验。我们坚持诚信，助力华人优化税务、降低风险、拓展国际业务。</p>
     </div>
 
     <div class="container" id="contact">
-        <h2 class="center-text">联系我们</h2>
+        <h2 class="center-text" id="title-contact">联系我们</h2>
         <!-- Left-aligned content -->
         <div class="left-aligned">
-            <p>工作日：周一至周五9AM-5PM(PST 太平洋时间，周六/日请预约)</p>
-            <p>电话：626-990-6829</p>
-            <p>邮箱: team@everbright.us</p>
-            <p>微信：</p>
-            <p>洛杉矶地区办公室：4200 Chino Hills PKWY STE 135-191, Chino Hills, CA 91709</p>
-            <P>@2025 by EverBright Accountancy Co</P>
+            <p id="text-workday">工作日：周一至周五9AM-5PM(PST 太平洋时间，周六/日请预约)</p>
+            <p id="text-phonenumber">联络电话：626-990-6829</p>
+            <p id="text-email">电子邮箱: team@everbright.us</p>
+            <p id="text-wechat">微信：</p>
+            <p id= "text-address" >洛杉矶地区办公室：4200 Chino Hills PKWY STE 135-191, Chino Hills, CA 91709 @2025 by EverBright Accountancy Co </p>
         </div>
     </div>
-
     <footer>
         &copy; 2025 EverBright. All Rights Reserved.
     </footer>
+    <script>
+         const translations = {
+            "zh-CN": {
+                "title-home": "欢迎来到恒睿会计事务所"
+                "text-home":"诚信至上，专业高效，客户至上是我们的服务宗旨。"
+                "text-further":"了解更多"
+                "title-about":"关于我们"
+                "text-about": "恒睿会计事务所位于洛杉矶，专注财务与税务服务，涵盖税务规划、跨国公司设立及投资咨询，业务拓展至墨西哥、中国等地。公司由美国及中国的专业注册会计师组成，具备10年以上经验。我们坚持诚信，助力华人优化税务、降低风险、拓展国际业务。"
+                "title-contact": "联系我们"
+                "text-workday": "工作日：周一至周五9AM-5PM(PST 太平洋时间，周六/日请预约)"
+                "text-phonenumber": "联络电话：626-990-6829"
+                "text-email": "电子邮箱: team@everbright.us"
+                "text-wechat": "微信："
+                "text-address": "洛杉矶地区办公室：4200 Chino Hills PKWY STE 135-191, Chino Hills, CA 91709 @2025 by EverBright Accountancy Co"
+            },
+             "zh-TW": {              
+                "title-home": "歡迎來到恒睿會計事務所",
+                "text-home": "誠信至上，專業高效，客戶至上是我們的服務宗旨。",
+                "text-further": "了解更多",
+                "title-about": "關於我們",
+                "text-about": "恒睿會計事務所位於洛杉磯，專注財務與稅務服務，涵蓋稅務規劃、跨國公司設立及投資諮詢，業務拓展至墨西哥、中國等地。公司由美國及中國的專業註冊會計師組成，具備10年以上經驗。我們堅持誠信，助力華人優化稅務、降低風險、拓展國際業務。",
+                "title-contact": "聯繫我們",
+                "text-workday": "工作日：週一至週五 9AM-5PM (PST 太平洋時間，週六/日請預約)",
+                "text-phonenumber": "聯絡電話：626-990-6829",
+                "text-email": "電子郵箱: team@everbright.us",
+                "text-wechat": "微信：",
+                "text-address": "洛杉磯地區辦公室：4200 Chino Hills PKWY STE 135-191, Chino Hills, CA 91709 @2025 by EverBright Accountancy Co"
+             },
+             "en": {        
+                "title-home": "Welcome to EverBright Accountancy",
+                "text-home": "Integrity first, professionalism and efficiency, and customer priority are our service principles.",
+                "text-further": "Learn More",
+                "title-about": "About Us",
+                "text-about": "EverBright Accountancy is based in Los Angeles, specializing in financial and tax services, including tax planning, multinational company establishment, and investment consulting. Our services extend to Mexico, China, and beyond. Our team consists of certified public accountants (CPAs) from both the United States and China, each with over 10 years of experience. We uphold integrity and are committed to helping Chinese communities optimize taxation, reduce risks, and expand international business.",
+                "title-contact": "Contact Us",
+                "text-workday": "Working Hours: Monday to Friday 9 AM - 5 PM (PST, appointments required on weekends)",
+                "text-phonenumber": "Phone Number: 626-990-6829",
+                "text-email": "Email: team@everbright.us",
+                "text-wechat": "WeChat:",
+                "text-address": "Los Angeles Office: 4200 Chino Hills PKWY STE 135-191, Chino Hills, CA 91709 @2025 by EverBright Accountancy Co"
+             },
+              "es": {             
+                "title-home": "Bienvenido a EverBright Accountancy",
+                "text-home": "Integridad ante todo, profesionalismo y eficiencia, y prioridad al cliente son nuestros principios de servicio.",
+                "text-further": "Aprender más",
+                "title-about": "Sobre Nosotros",
+                "text-about": "EverBright Accountancy tiene su sede en Los Ángeles y se especializa en servicios financieros y fiscales, incluyendo planificación fiscal, establecimiento de empresas multinacionales y consultoría de inversiones. Nuestros servicios se extienden a México, China y más allá. Nuestro equipo está compuesto por contadores públicos certificados (CPAs) de Estados Unidos y China, cada uno con más de 10 años de experiencia. Nos comprometemos con la integridad y ayudamos a la comunidad china a optimizar su fiscalidad, reducir riesgos y expandir sus negocios internacionales.",
+                "title-contact": "Contáctenos",
+                "text-workday": "Horario de trabajo: Lunes a viernes 9 AM - 5 PM (PST, citas requeridas los fines de semana)",
+                "text-phonenumber": "Número de Teléfono: 626-990-6829",
+                "text-email": "Correo Electrónico: team@everbright.us",
+                "text-wechat": "WeChat:",
+                "text-address": "Oficina en Los Ángeles: 4200 Chino Hills PKWY STE 135-191, Chino Hills, CA 91709 @2025 by EverBright Accountancy Co"
+             }
+         };
+  
+        function changeLanguage(lang) {
+            document.getElementById("title-home").innerHTML = translations[lang]["title-home"];
+            document.getElementById("title-home").innerHTML = translations[lang]["title-home"];
+            document.getElementById("text-home").innerHTML = translations[lang]["text-home"];
+            document.getElementById("text-further").innerHTML = translations[lang]["text-further"];
+            document.getElementById("title-about").innerHTML = translations[lang]["title-about"];
+            document.getElementById("text-about").innerHTML = translations[lang]["text-about"];
+            document.getElementById("title-contact").innerHTML = translations[lang]["title-contact"];
+            document.getElementById("text-workday").innerHTML = translations[lang]["text-workday"];
+            document.getElementById("text-phonenumber").innerHTML = translations[lang]["text-phonenumber"];
+            document.getElementById("text-email").innerHTML = translations[lang]["text-email"];
+            document.getElementById("text-wechat").innerHTML = translations[lang]["text-wechat"];
+            document.getElementById("text-address").innerHTML = translations[lang]["text-address"];       
+        }
+    </script>
 </body>
 </html>
