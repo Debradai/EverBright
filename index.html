@@ -18,10 +18,10 @@
             padding: 20px 0;
         }
         nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
+                color: #4A3D2F; /* 深棕色，适配金色背景 */
+                text-decoration: none;
+                padding: 10px 15px;
+                font-weight: bold;
         }
         .container {
             max-width: 800px;
@@ -49,12 +49,23 @@
             color: white;
         }
         nav {
-            display: flex; /* Enables horizontal layout */
-            align-items: center; /* Aligns logo and links vertically */
-            justify-content: space-between; /* Spaces out logo and navigation */
-            background: #333; /* Navbar background color */
-            padding: 10px 20px;
+            display: flex; /* 让导航栏元素水平排列 */
+            justify-content: flex-end; /* 让导航栏靠右对齐 */
+            align-items: center; /* 垂直居中对齐 */
+            background-color: #D4AF37; /* 金黄色 */
+            background-image: linear-gradient(135deg, #E2C085 10%, #D4AF37 90%); /* 帆布质感渐变 */
+            background-size: cover;
+            padding: 12px 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影，增强立体感 */
         }
+        #languageSwitcher {
+            margin-left: 20px; /* 让语言选择框和导航菜单保持间距 */
+            background: transparent;
+            border: 1px solid #4A3D2F;
+            color: #4A3D2F;
+            padding: 5px;
+            border-radius: 4px;
+        }   
         .logo img {
             height: 50px; /* Adjust logo size */
             margin-right: 20px; /* Space between logo and menu */
