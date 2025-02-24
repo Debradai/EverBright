@@ -65,9 +65,10 @@
             padding: 5px;
             border-radius: 4px;
         }   
-        .logo img {
-            height: 70px; /* Adjust logo size */
-            margin-right: 20px; /* Space between logo and menu */
+      #company-logo {
+            height: 80px; /* Increase height */
+            width: auto; /* Keep aspect ratio */
+            margin-right: 15px; /* Add spacing between logo and nav */
         }
         .nav-links {
             display: flex; /* Makes the navigation links horizontal */
@@ -91,7 +92,7 @@
     <header>
         <nav>
             <a href="https://weinkris.com" class="logo">
-            <img src="logo.png" alt="Company Logo">
+            <img id="company-logo" src="logo.png" alt="Company Logo">
             </a>
             <div class="nav-links">
                 <a href="#home">首页</a>
